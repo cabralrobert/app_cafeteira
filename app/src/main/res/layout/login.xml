@@ -17,43 +17,49 @@
         android:src="@mipmap/icon"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/editText2"
+        android:layout_above="@+id/nomeCadastro"
         android:padding="50dip" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome do Usuario"
-        android:layout_above="@+id/editText"
+        android:hint="Email do Usuario"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/passwordUser"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/editText2" />
+        android:id="@+id/nomeCadastro" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="Senha"
-        android:id="@+id/editText"
-        android:layout_above="@+id/button"
+        android:id="@+id/passwordUser"
+        android:layout_above="@+id/cadastroButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
+        android:onClick="loginEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:id="@+id/button"
-        android:layout_above="@+id/botaoLogin"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/cadastroButton"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
 
     <Button
-        android:onClick="botaoLogin"
+        android:onClick="botaoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login com o facebook"
-        android:id="@+id/botaoLogin"
-        android:layout_marginBottom="50dp"
+        android:text="Cadastre-se"
+        android:id="@+id/button2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
 
 </RelativeLayout>

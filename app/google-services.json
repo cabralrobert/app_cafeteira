@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "510113281772",
+    "firebase_url": "https://honesty-coffee.firebaseio.com",
+    "project_id": "honesty-coffee",
+    "storage_bucket": "honesty-coffee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510113281772:android:8a1f4d20e98ea7e2",
+        "android_client_info": {
+          "package_name": "br.ufc.robertcabral.menulateral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510113281772-fqpana6do84sk79cl5i5snlmathkemad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKk6ylk1wYj1wB5ZL5AOLadIihxSDb1EU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

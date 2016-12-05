@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.ufc.robertcabral.menulateral.Login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/nomeUsuario"
+        android:inputType="textEmailAddress"
+        android:layout_alignTop="@+id/imagemPerfilCadastro"
+        android:layout_toRightOf="@+id/imagemPerfilCadastro"
+        android:layout_toEndOf="@+id/imagemPerfilCadastro" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="25dp"
+        android:id="@+id/idadeUsuario"
+        android:inputType="number"
+        android:layout_below="@+id/nomeUsuario"
+        android:layout_toRightOf="@+id/imagemPerfilCadastro"
+        android:layout_toEndOf="@+id/imagemPerfilCadastro" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email do Usuario"
+        android:paddingTop="25dp"
+        android:id="@+id/emailUser"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/idadeUsuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:paddingTop="25dp"
+        android:inputType="textPassword"
+        android:id="@+id/passwordUser"
+        android:layout_below="@+id/emailUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="cadastroCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:id="@+id/cadastroButton"
+        android:layout_below="@+id/passwordUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <ImageButton
+        android:onClick="fotoPerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imagemPerfilCadastro"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
